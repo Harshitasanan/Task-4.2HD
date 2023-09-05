@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "hdtraffic",
+			"path": ".."
+		},
+		{
+			"name": "public",
+			"path": "../../hd/public"
+		}
+	],
+	"settings": {}
+}

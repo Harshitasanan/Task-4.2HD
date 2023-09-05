@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./index.css" /> <!-- Include your external CSS file here -->
+    <title>Web page</title>
+</head>
+<body>
+<h1>Traffic Lights</h1>
+<input type="button" class="hide-button" value="Store the Arduino's URL locally" onClick="{
+    localStorage.setItem('myStoredText1', document.getElementById('myURL').value)   
+    alert('Device URL =' + document.getElementById('myURL').value + ' Has been stored')
+ }">
+
+<div class="cen" style="display: flex;">
+    <button class="red" onclick="LED_RED()">Red LED</button>
+    <button class="green" onclick="LED_GREEN()">GREEN LED</button>
+    <button class="yellow" onclick="LED_BLUE()">Blue LED</button>
+    
+</div>
+<div class="center">
+<button class="off" onclick="LED_OFF()">OFF</button>
+</div>
+<iframe id="myFrame01"></iframe><br>
+<div class="video-container">
+    <iframe class="video-iframe" id="youtubeVideo" width="560" height="250" src="https://www.youtube.com/embed/9TKrKqAJOSA?si=xnClgmhhDbmJXJoC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script type="module">
+
+ import { LED_RED, LED_BLUE, LED_GREEN, LED_OFF } from './script.mjs';
+        window.LED_RED = LED_RED;
+        window.LED_BLUE = LED_BLUE;
+        window.LED_GREEN = LED_GREEN;
+        window.LED_OFF = LED_OFF;
+
+</script>
+
+</body>
+</html>

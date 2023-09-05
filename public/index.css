@@ -1,0 +1,158 @@
+body {
+    background-image: url('../img/traffic.jpg');
+    /* margin: 0;  */
+    overflow: hidden; 
+}
+.video{
+    /* margin-top: 20px; */
+    text-align: center;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Style the video iframe */
+.video-iframe {
+    width: 567px;
+    height: 250px;
+}
+
+ #myFrame01 {
+            border: none;
+            padding: 0;
+ }
+ .hide-button {
+            display: none;
+        }
+#myURL {
+            display: none;
+        }
+ 
+ .hide-reload {
+            display: none;
+        }
+h1{
+	 
+	background-size: cover; 
+	background: -webkit-linear-gradient(left,  #9dacff 0%,#ff745c 100%);
+	text-align: center;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 50px;
+}
+.center{
+    display: flex;
+    /* margin-top: 30px; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.off{
+    border-radius: 20px;
+   border: 1px solid #fff;
+	font-weight: 500;
+    font-size: 16px;
+    transition: all 0.8s ease;
+    color: white;
+	background-color: black;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+	padding: 20px;
+}
+.off:hover{
+	transform: scale(1.1);
+}
+.red{
+	border-radius: 28px;
+	justify-content: center;
+    align-items: center;
+   border: 1px solid #fff;
+	font-weight: 500;
+    font-size: 16px;
+    transition: all 0.8s ease;
+    color: black;
+	background-color: lightgrey;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+	padding: 20px;
+}
+
+.red:hover{
+	background-color: red;
+	transform: scale(1.1);
+	color: white;
+}
+.green{
+	border-radius: 28px;
+	justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+	font-weight: 500;
+    font-size: 16px;
+    transition: all 0.8s ease;
+    color: black;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+	padding: 20px;
+}
+.green:hover{
+	background-color: green;
+	transform: scale(1.1);
+	color: white;
+}
+.yellow{
+	border-radius: 28px;
+	justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+	background-color: lightgrey;
+	font-weight: 500;
+    font-size: 16px;
+    transition: all 0.8s ease;
+    color: black;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+	padding: 20px;
+}
+.yellow:hover{
+	background-color: blue;
+	transform: scale(1.1);
+	color: white;
+}
+
+h1 {
+	font-size: 60px;
+	line-height: 60px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0;
+	transition: all 1s ease-in-out;
+	transform: translateX(0);
+	text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+
+.slices {
+	position: absolute;
+	
+	background: url('https://100dayscss.com/codepen/slice-image-1.jpg') center center no-repeat;
+	
+	cursor: pointer;
+
+	&:hover {
+		h1 {
+			transform: translateX(-40px);
+		} 
+		h2 {
+			transform: translateX(40px);
+		}
+		.slice {
+			transform: translateY(0);	
+			opacity: 1;
+		}
+	}
+
+}
